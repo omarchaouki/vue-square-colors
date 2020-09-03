@@ -1,0 +1,26 @@
+<head>
+   <style>
+      div {
+      margin: 5px;
+      padding: 5px;
+      width: 100px;
+      height: 100px;
+      background-color: #F7F7F7;
+      display: inline-block; 
+      }
+      .blue {
+      background-color: #80DAF5;
+      }
+      .yellow {
+      background-color: yellow;
+      }
+   </style>
+</head>
+<div id="app">
+   <div @click="opposite('blueClass')" :class="{blue: blueClass}"  >Div 1</div>
+   <div @click=opposite('yellowClass') :class="{yellow: yellowClass}">Div 2</div>
+   <div>Div 3</div>
+   <div>Div 4</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="./js/main.js"></script>
